@@ -3,7 +3,7 @@ package strstr
 func strStr(haystack string, needle string) int {
 	var getNext func(needle string) []int
 	getNext = func(s string) []int {
-		var n = len(needle)
+		var n = len(s)
 		var next = make([]int,n+1) // next数组多开一位，0固定为-1
 		next[0] = -1
 		var i,j = 0,-1 // i,j为双指针下标，一开始固定next[1] = 0，即字串需要len > 1
