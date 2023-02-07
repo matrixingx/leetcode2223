@@ -1,4 +1,4 @@
-package binarysarch
+package binarysearch
 
 import (
 	"fmt"

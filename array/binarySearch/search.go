@@ -1,4 +1,4 @@
-package binarysarch
+package binarysearch
 
 func search(nums []int, target int) int {
 	if len(nums) == 1 {
