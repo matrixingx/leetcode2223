@@ -1,5 +1,9 @@
 package myatoi
 
+/*
+	https://leetcode.cn/problems/decode-ways/
+*/
+
 import "strings"
 
 func myAtoi(s string) int {

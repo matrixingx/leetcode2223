@@ -1,5 +1,9 @@
 package groupanagrams
 
+/*
+	https://leetcode.cn/problems/group-anagrams/
+*/
+
 func groupAnagrams(strs []string) [][]string {
 	var mp = make(map[[26]int64][]string)
 	var res [][]string

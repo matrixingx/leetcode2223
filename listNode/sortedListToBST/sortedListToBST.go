@@ -2,7 +2,7 @@ package sortedlisttobst
 
 /*
 	https://leetcode.cn/problems/convert-sorted-list-to-binary-search-tree/
-	go分割数组 分割点左开右闭 也就是 ) [
+	go分割数组 分割点左开右闭 也就是
 */
 
 type ListNode struct {
