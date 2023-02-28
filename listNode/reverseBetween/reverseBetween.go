@@ -16,8 +16,22 @@ func reverseBetween(head *ListNode, left int, right int) *ListNode {
 	}
 	DummyNode := &ListNode{Next: head}
 	var prev = DummyNode
-	for i := 0 ; i < left ; i
-	return head
+	for i := 0 ; i < left-1 ; i ++ {
+		prev = prev.Next
+	}
+	var temp = prev.Next
+	for i := 0 ; i < right - left ; i ++ {
+		temp = temp.Next
+	}
+	var next = temp.Next
+	temp.Next = nil
+	res := reverseList(prev.Next)
+	prev.Next = res
+	for res.Next != nil {
+		res = res.Next
+	}
+	res.Next = next
+	return DummyNode.Next
 }
 
 func reverseList(head *ListNode) *ListNode {
