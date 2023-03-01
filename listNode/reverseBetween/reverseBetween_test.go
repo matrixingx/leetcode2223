@@ -56,9 +56,3 @@ func TestReverseBetween(t *testing.T) {
 	res = reverseBetween(testNode4,1,2)
 	fmt.Println(res)
 }
-
-func TestReverseList(t *testing.T) {
-	reverseHead,reverseTail := reverseList(testNode,3)
-	fmt.Println(reverseHead)
-	fmt.Println(reverseTail)
-}
